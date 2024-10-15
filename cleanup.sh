@@ -1,0 +1,2 @@
+rm *.beam
+rm *.dump
