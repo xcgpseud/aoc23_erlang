@@ -1,6 +1,6 @@
 -module(c1).
 -export([solve/0]).
--import(file_helper, [readfile/1, readfile/2]).
+-import(file_helper, [readfile/2]).
 -import(list_helper, [first/2, last/2]).
 -import(type_helper, [is_digit/1]).
 
