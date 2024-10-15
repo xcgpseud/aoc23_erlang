@@ -1,2 +1,2 @@
-rm *.beam
-rm *.dump
+rm *.beam -f
+rm *.dump -f

@@ -2,9 +2,9 @@
 
 ```sh
 sh compile.sh
-sh solve.sh 1 2
+sh solve.sh 1
 ```
 
-where 1 is the day and 2 is the part
+where 1 is the day
 
-will run the given file and produce output.
+will run the given day's challenges and produce output.
