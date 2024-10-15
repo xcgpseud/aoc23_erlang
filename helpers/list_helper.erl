@@ -10,7 +10,6 @@ first(F, [H | T]) ->
     end.
 
 last(F, L) -> last(F, L, none).
-
 last(_, [], Acc) ->
     Acc;
 last(F, [H | T], Acc) ->
