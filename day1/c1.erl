@@ -5,9 +5,10 @@
 -import(type_helper, [is_digit/1]).
 
 solve() ->
-    Lines = file_helper:readfile("day1/day1.txt", fun binary_to_list/1),
-    Numbers = lists:map(fun extract_numbers/1, Lines),
-    io:format("Result: ~p\n", [lists:sum(Numbers)]).
+    Lines = file_helper:readfile("day1/day1.txt", fun(Line) ->
+        extract_numbers(binary_to_list(Line))
+    end),
+    io:format("Result: ~p\n", [lists:sum(Lines)]).
 
 extract_numbers(Line) ->
     First = first(fun(N) -> is_digit(N) end, Line),
